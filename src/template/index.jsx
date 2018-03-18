@@ -2,13 +2,15 @@ import Proptypes from 'prop-types';
 import Head from 'next/head';
 import React from 'react';
 
+import GlobalStyles from './globalStyles';
+
 const Template = props => (
-  <main>
+  <GlobalStyles>
     <Head>
       <title>{props.title || 'Next App'}</title>
     </Head>
     {props.children}
-  </main>
+  </GlobalStyles>
 );
 
 Template.propTypes = {
