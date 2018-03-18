@@ -1,9 +1,12 @@
+var routes = require('./routes');
+
 module.exports = {
     distDir: 'dist',
     exportPathMap: function() {
-        return {
-            '/': { page: '/' },
-        }
+        return routes
+    },
+    publicRuntimeConfig: {
+        staticFolder: '/assets'
     },
     webpack: (config) => {
         config.module.rules.push({
