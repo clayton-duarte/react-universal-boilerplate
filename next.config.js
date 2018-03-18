@@ -6,7 +6,7 @@ module.exports = {
         return routes
     },
     publicRuntimeConfig: {
-        staticFolder: '/assets'
+        staticFolder: '/src/assets'
     },
     webpack: (config) => {
         config.module.rules.push({

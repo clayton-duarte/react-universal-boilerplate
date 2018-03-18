@@ -1,8 +1,10 @@
 import React from 'react';
-import { Test, Button } from '../components';
+import { Template, Test, Button } from '../src/components';
 
 export default () => (
-  <Button>
-    <Test />
-  </Button>
+  <Template title="Test Page">
+    <Button>
+      <Test />
+    </Button>
+  </Template>
 );
