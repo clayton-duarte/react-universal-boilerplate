@@ -2,8 +2,8 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-font-family: inherit;
 background: tomato;
+font: inherit;
 color: white;
 `;
 
