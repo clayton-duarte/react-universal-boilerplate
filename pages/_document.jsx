@@ -1,5 +1,7 @@
 
-//
+// DO NOT EDIT !!!!
+// only if you know what you are doing...
+
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 

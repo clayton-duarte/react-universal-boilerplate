@@ -1,5 +1,7 @@
 import Button from './button';
+import Test from './test';
 
-module.exports = {
+export {
   Button,
+  Test,
 };

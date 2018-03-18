@@ -1,6 +1,8 @@
 import React from 'react';
-import Button from '../components/button';
+import { Test, Button } from '../components';
 
 export default () => (
-  <Button>teste</Button>
+  <Button>
+    <Test />
+  </Button>
 );

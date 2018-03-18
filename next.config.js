@@ -16,7 +16,7 @@ module.exports = {
             options: {
                 fix: true
             }
-        })
-        return config
+        });
+        return config;
     }
 }
