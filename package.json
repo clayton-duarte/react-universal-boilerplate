@@ -6,9 +6,9 @@
     "scripts": {
         "start": "clear && next",
         "build": "clear && next build",
-        "export": "clear && next build && next export",
-        "server": "clear && next build && next start",
-        "static": "clear && npm run export && serve out"
+        "export": "npm run build && next export",
+        "server": "npm run build && next start",
+        "static": "npm run export && serve out"
     },
     "author": "clayton-duarte",
     "license": "MIT",
