@@ -1,2 +1,6 @@
+import React from 'react';
+import Button from '../components/button';
 
-export default () => (<p>funciona</p>);
+export default () => (
+  <Button>teste</Button>
+);
