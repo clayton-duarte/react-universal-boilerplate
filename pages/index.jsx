@@ -1,10 +1,14 @@
 import React from 'react';
-import { Grid } from 'gridx';
+import { Row } from 'gridx';
 
 import { Template, Test, Button } from '../src';
 
+const style = {
+  height: '100vh',
+};
+
 export default () => (
-  <Grid>
+  <Row justify="center" align="center" style={style}>
     <Template title="Test Page">
       <Button>
         <Test />
@@ -18,5 +22,5 @@ export default () => (
       `}
     </style> */}
     </Template>
-  </Grid>
+  </Row>
 );
