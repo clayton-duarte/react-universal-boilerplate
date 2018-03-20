@@ -10,7 +10,7 @@ const style = {
 export default () => (
   <Row justify="center" align="center" style={style}>
     <Template title="Test Page">
-      <Button>
+      <Button onClick={() => console.log('onClick')}>
         <Test />
       </Button>
       {/* <p>Styled</p>
