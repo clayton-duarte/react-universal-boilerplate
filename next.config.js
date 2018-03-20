@@ -1,13 +1,19 @@
-var routes = require('./routes');
+const withTM = require('@weco/next-plugin-transpile-modules')
+const routes = require('./routes');
 
-module.exports = {
+module.exports = withTM({
     distDir: 'dist',
+    //
+    transpileModules: ['gridx'],
+    //
     exportPathMap: function() {
         return routes
     },
+    //
     publicRuntimeConfig: {
         staticFolder: '/src/assets'
     },
+    //
     webpack: (config) => {
         config.module.rules.push({
             test: /\.(js|jsx)$/,
@@ -19,4 +25,4 @@ module.exports = {
         });
         return config;
     }
-}
+});

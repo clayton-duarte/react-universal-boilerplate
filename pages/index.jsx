@@ -1,12 +1,15 @@
 import React from 'react';
+import { Grid } from 'gridx';
+
 import { Template, Test, Button } from '../src';
 
 export default () => (
-  <Template title="Test Page">
-    <Button>
-      <Test />
-    </Button>
-    {/* <p>Styled</p>
+  <Grid>
+    <Template title="Test Page">
+      <Button>
+        <Test />
+      </Button>
+      {/* <p>Styled</p>
     <style jsx>
       {`
         p {
@@ -14,5 +17,6 @@ export default () => (
         }
       `}
     </style> */}
-  </Template>
+    </Template>
+  </Grid>
 );
